@@ -1,0 +1,86 @@
+{
+    "sourceHost": "https://127.0.0.1/service/appresource",
+    "hostName": "https://127.0.0.1:10071",
+    "APIName": "https://127.0.0.1/service/appservice",
+    "admins": [{
+        "开发者": "cr",
+        "mail": "rui.chen@jwis.cn",
+
+        "phoneNum": "13510271102"
+    }],
+    "administration": {
+        "appName": "tru_usercenter",
+        "messageSender": {
+            "enable": true,
+            "from": "/msg/HttpBatchSendSM",
+            "port": 80,
+            "host": "222.73.117.158",
+            "protocol": "http:",
+            "auth": {
+                "user": "jiewei88",
+                "pass": "coyotePWD123"
+            }
+        },
+        "mailSender": {
+            "enable": false,
+            "from": "tru@jwis.cn",
+            "port": 25,
+            "host": "smtp.jwis.cn",
+            "auth": {
+                "user": "tru@jwis.cn",
+                "pass": "Qwer1234"
+            }
+        }
+    },
+    "cluster": {
+        "enable": false,
+        "numCluster": 4
+    },
+    "server": {
+        "bindHost": "0.0.0.0",
+        "port": 10000
+    },
+    "mktDatabase": {
+        "db": "tru_market",
+        "dialect": "mongodb",
+        "host": "127.0.0.1",
+        "port": "27017"
+    },
+    "proxyDatabase": {
+        "db": "mkt_user_proxy",
+        "dialect": "mongodb",
+        "host": "127.0.0.1",
+        "port": "27017"
+    },
+    "signServer": {
+        "host": "127.0.0.1",
+        "port": "6379",
+        "timeout": 172800
+    },
+    "security": {
+        "securityKey": "tru-redis-oauth",
+        "outEncoding": "base64",
+        "algorithm": "aes-256-cbc"
+    },
+    "domain": {
+        "password": "123456"
+    },
+    "id":100000000,
+    "zkClient": {
+        "zookeeperAddress": "127.0.0.1:2181",
+        "zkNodeName": "usercenter"
+    },
+    "WindchillHost": "https://127.0.0.1/service/serviceassembler",
+    "appGateWay": "http://127.0.0.1",
+    "mode":"B",
+    "thirdServer":{
+        "debug":false,
+        "debug-deviceMate":"http://120.76.194.101:9001",
+        "deviceMate":"http://127.0.0.1",
+        "login":"/api/authenticate",
+        "logOut":"/api/authenticate/token/del",
+        "getUserInfoByToken":"/api/authenticate/user/",
+        "modifyPassword":"/api/authenticate/change_password/",
+        "appGaateWay":"http://127.0.0.1"
+    }
+}

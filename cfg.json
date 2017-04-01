@@ -1,0 +1,17 @@
+{
+  "cfgFileList": [
+    {
+      "znode": "/server/tru_usercenter_1.3/common/configuration.json",
+      "targetPath": "/opt/truplatform/usercenter/configuration.json",
+      "needRestart":true
+    }
+  ],
+  "restartShell": "/opt/truplatform/usercenter/restart.sh",
+  "stopShell": "/opt/truplatform/usercenter/stop.sh",
+  "statusCheckShell": "/opt/truplatform/usercenter/check.sh",
+  "znode": "/servermgt/tru_usercenter_1.3/<serverip>",
+  "version": "1.3.2",
+  "autoStart":true
+}
+
+

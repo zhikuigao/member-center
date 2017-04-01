@@ -1,0 +1,8 @@
+{
+    "tru.pcmate":["/service/appservice","/service/usercenter","/service/windchilladapter","/service/serviceassembler"],
+    "tru.workflow": ["/service/workflow","/service/appservice","/service/usercenter","/service/cadcloud"],
+    "tru.androidmate": ["/service/appservice"],
+    "tru.iosmate": ["/service/appservice"],
+    "other": ["/test/abc/efg"]
+}
+
